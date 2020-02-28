@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en"><!--
+ __  __                __                                     __
+/\ \/\ \              /\ \             __                    /\ \
+\ \ \_\ \   __  __    \_\ \      __   /\_\      __       ___ \ \ \/'\
+ \ \  _  \ /\ \/\ \   /'_` \   /'__`\ \/\ \   /'__`\    /'___\\ \ , <
+  \ \ \ \ \\ \ \_\ \ /\ \L\ \ /\  __/  \ \ \ /\ \L\.\_ /\ \__/ \ \ \\`\
+   \ \_\ \_\\/`____ \\ \___,_\\ \____\ _\ \ \\ \__/.\_\\ \____\ \ \_\ \_\
+    \/_/\/_/ `/___/> \\/__,_ / \/____//\ \_\ \\/__/\/_/ \/____/  \/_/\/_/
+                /\___/                \ \____/
+                \/__/                  \/___/
+
+Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
+-->
+
+
+
+
+
+
+
+
+
+<head>
+  <!-- =============== -->
+<!-- META            -->
+<!-- =============== -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="naver-site-verification" content="22c5b4ef3bfda7fc6100671413989219de7a4ac8"/>
+<meta property="og:title" content="[리뷰] 파이썬에 참 좋은 PyCharm">
+<meta property="og:type" content="article">
+
+
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/img/review/2019-11-22-review-book-pycharm-1.jpg">
+  <br/>
+
+
+<meta property="og:image:width" content="640" />
+<meta property="og:image:height" content="360" />
+
+
+
+  <title>[리뷰] 파이썬에 참 좋은 PyCharm &middot; TheoryDB</title>
+
+
+
+<meta name="description" content="개요
+
+  본 리뷰는 비제이퍼블릭 출판사 "파이썬에 참 좋은 PyCharm(테리엇 저)"를 읽고 얻은 지식을 정리한 글입니다.
+
+
+
+  목차
+    
+      제트브레인(Jetbrains)과 파이참(PyCharm)
+      Pycharm 체계적인 기능소개
+      기본서보다 더 뛰어난 (실용) 기본서
+      다시 고급기능으로… 화룡정점
+      누가 읽어야 하는가?
+      책의 구성 및 요약
+      요약하며…
+    
+  
+
+
+">
+<meta property="og:description" content="개요
+
+  본 리뷰는 비제이퍼블릭 출판사 "파이썬에 참 좋은 PyCharm(테리엇 저)"를 읽고 얻은 지식을 정리한 글입니다.
+
+
+
+  목차
+    
+      제트브레인(Jetbrains)과 파이참(PyCharm)
+      Pycharm 체계적인 기능소개
+      기본서보다 더 뛰어난 (실용) 기본서
+      다시 고급기능으로… 화룡정점
+      누가 읽어야 하는가?
+      책의 구성 및 요약
+      요약하며…
+    
+  
+
+
+">
+
+
+
+<!-- tipuesearch -->
+<link rel="stylesheet" href="/assets/tipuesearch/css/tipuesearch.css">
+
+
+<!-- =============== -->
+<!-- LINKS           -->
+<!-- =============== -->
+<link rel="canonical" href="http://localhost:4000/review/2019/11/22/review-book-pycharm/">
+<meta property="og:url" content="http://localhost:4000/review/2019/11/22/review-book-pycharm/">
+
+<link rel="alternate" type="application/atom+xml" title="TheoryDB Feed" href="http://localhost:4000/feed.xml">
+
+
+  <link rel="prev" href="http://localhost:4000/review/2019/11/11/review-book-dynamic-programming/">
+
+
+
+  <link rel="next" href="http://localhost:4000/review/2019/12/15/review-book-GAN/">
+
+
+<link rel="apple-touch-icon" href="http://localhost:4000/apple-touch-icon.png">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+<!-- Place favicon.ico in the root directory -->
+
+<!-- =============== -->
+<!-- SCRIPTS         -->
+<!-- =============== -->
+<script>
+  !function(n,e){function t(n,e){n.onload=function(){this.onerror=this.onload=null,e(null,n)},n.onerror=function(){this.onerror=this.onload=null,e(new Error("Failed to load "+this.src),n)}}function o(n,e){n.onreadystatechange=function(){"complete"!=this.readyState&&"loaded"!=this.readyState||(this.onreadystatechange=null,e(null,n))}}n._loaded=!1,n.loadJSDeferred=function(a,d){function r(){n._loaded=!0;var r=e.createElement("script");r.src=a,d&&(("onload"in r?t:o)(r,d),r.onload||t(r,d));var l=e.getElementsByTagName("script")[0];l.parentNode.insertBefore(r,l)}n._loaded?r():n.addEventListener?n.addEventListener("load",r,!1):n.attachEvent?n.attachEvent("onload",r):n.onload=r}}(window,document);
+
+  !function(e){"use strict";var n=function(n,t,o){function i(e){if(a.body)return e();setTimeout(function(){i(e)})}function r(){l.addEventListener&&l.removeEventListener("load",r),l.media=o||"all"}var d,a=e.document,l=a.createElement("link");if(t)d=t;else{var f=(a.body||a.getElementsByTagName("head")[0]).childNodes;d=f[f.length-1]}var s=a.styleSheets;l.rel="stylesheet",l.href=n,l.media="only x",i(function(){d.parentNode.insertBefore(l,t?d:d.nextSibling)});var u=function(e){for(var n=l.href,t=s.length;t--;)if(s[t].href===n)return e();setTimeout(function(){u(e)})};return l.addEventListener&&l.addEventListener("load",r),l.onloadcssdefined=u,u(r),l};"undefined"!=typeof exports?exports.loadCSS=n:e.loadCSS=n}("undefined"!=typeof global?global:this);
+
+  !function(t){if(t.loadCSS){var e=loadCSS.relpreload={};if(e.support=function(){try{return t.document.createElement("link").relList.supports("preload")}catch(t){return!1}},e.poly=function(){for(var e=t.document.getElementsByTagName("link"),r=0;r<e.length;r++){var n=e[r];"preload"===n.rel&&"style"===n.getAttribute("as")&&(t.loadCSS(n.href,n,n.getAttribute("media")),n.rel=null)}},!e.support()){e.poly();var r=t.setInterval(e.poly,300);t.addEventListener&&t.addEventListener("load",function(){e.poly(),t.clearInterval(r)}),t.attachEvent&&t.attachEvent("onload",function(){t.clearInterval(r)})}}}(this);
+
+  window.disablePushState = false;
+  window.disableDrawer = false;
+</script>
+
+<!--[if lt IE 9]>
+<script src="https://unpkg.com/html5shiv/dist/html5shiv.min.js"></script>
+<![endif]-->
+
+<!-- =============== -->
+<!-- STYLES          -->
+<!-- =============== -->
+<!--[if gt IE 8]><!---->
+<style>
+  
+  article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}*{box-sizing:border-box}html,body{margin:0;padding:0}html{font-size:16px;line-height:1.75}body{color:#333;background-color:#fff;overflow-y:scroll}a{text-decoration:none}.lead{margin-left:-1rem;margin-right:-1rem}img,.img{display:block;max-width:100%;margin-bottom:1rem;border:none}img.lead,.img.lead{max-width:calc(100% + 2rem);width:calc(100% + 2rem)}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.heading{font-weight:bold;text-rendering:optimizeLegibility}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{margin:1.6rem 0 1rem;line-height:1.6}h1,.h1{font-size:2rem;line-height:1.25}h2,.h2{font-size:1.5rem}h3,.h3{font-size:1.17em}p{margin-top:0;margin-bottom:1rem}p.lead{font-size:1.25rem;font-weight:300;padding:0 1rem}ul,ol,dl{margin-top:0;margin-bottom:1rem}ul,ol{padding-left:1.25rem}hr{position:relative;margin:1.5rem 0;border:0;border-top:1px solid #eee}.hr{padding-bottom:.5rem;border-bottom:1px solid #eee;margin-bottom:1.5rem}h4,h5,h6,.h4,.h5,.h6{margin-bottom:0.5rem;font-size:1rem}table{margin-bottom:1rem;width:100%;width:calc(100% + 2rem);margin-left:-1rem;border:1px solid #e5e5e5;border-collapse:collapse;border-spacing:0}td,th{padding:.25rem .5rem;border:1px solid #e5e5e5}td:first-child,th:first-child{padding-left:1rem}td:last-child,th:last-child{padding-right:1rem}thead+tbody,tbody+tbody,tfoot{border-top:3px double #e5e5e5}tbody tr:nth-child(odd) td,tbody tr:nth-child(odd) th{background-color:#f9f9f9}footer{margin-bottom:2rem}.page,.post{margin-bottom:3em}.page li+li,.post li+li{margin-top:.25rem}.page>header,.post>header{margin-bottom:2rem}.page-title,.post-title{margin-top:0}.post-date{display:block;margin-top:-0.5rem;margin-bottom:1rem;color:#9a9a9a}.related-posts{padding-left:0;list-style:none}.related-posts>li,.related-posts>li+li{margin-top:1rem}.related-posts>li>small,.related-posts>li+li>small{font-size:75%;color:#9a9a9a}.message{margin-bottom:1rem;padding:1rem;color:#787878;background-color:#f9f9f9;margin-left:-1rem;margin-right:-1rem}body,main{position:relative;overflow-x:hidden}@media screen{body::before{content:'';background:#e5e5e5;position:absolute;left:0;top:0;bottom:0}}@media screen and (min-width: 40em){html{font-size:17px}}@media screen and (min-width: 54em){html{font-size:16px}}@media screen and (min-width: 88em){html{font-size:17px}}@media screen and (min-width: 125em){html{font-size:18px}}.sr-only{display:none}.clearfix,.sidebar-social::after,.clearafter::after{content:"";display:table;clear:both}a,.a{position:relative;padding-bottom:.15rem;border-style:hidden}.img{overflow:hidden;background-color:#f9f9f9}.img>img{margin:0;width:100%;height:100%}.sixteen-nine{position:relative}.sixteen-nine::before{display:block;content:"";width:100%;padding-top:56.25%}.sixteen-nine>*{position:absolute;top:0;left:0;right:0;bottom:0}h1+hr,h2+hr,h3+hr,h4+hr,h5+hr,h6+hr{margin-top:0}.fade-in{animation-duration:500ms;animation-name:fade-in;animation-fill-mode:forwards}@keyframes fade-in{from{transform:translateY(-2rem);opacity:0}50%{transform:translateY(-2rem);opacity:0}to{transform:translateY(0);opacity:1}}.mb6{margin-bottom:10rem}.sidebar{color:rgba(255,255,255,0.75);text-align:left}.sidebar::before{content:"";position:absolute;z-index:2;top:0;left:0;bottom:0;right:0;background:linear-gradient(to bottom, rgba(32,32,32,0) 0%, rgba(32,32,32,0.5) 100%)}.sidebar a{color:#fff;border-bottom-color:rgba(255,255,255,0.2)}.right-side{width:100%;margin-left:auto;margin-right:auto}.right-side .ad-first{text-align:center}@media screen{.right-side{max-width:38rem;min-height:100vh}.right-side .ad-second{display:none}}@media screen and (min-width: 54em){.right-side{margin-left:20rem;margin-right:1rem;padding:4rem 1rem 12rem}.right-side .ad-second{text-align:center;display:block}}@media screen and (min-width: 72em){.right-side{margin-left:22rem;max-width:42rem}}@media screen and (min-width: 88em){.right-side{width:162px;margin-left:0rem;margin-right:0rem;padding:0rem;margin-top:10rem;display:block;float:left}}@media screen and (min-width: 96em){.right-side{width:300px;margin-right:0rem}}#_yDrawer{position:relative}@media screen{#_yDrawer{min-height:640px;min-height:100vh}}@media screen and (min-width: 54em){#_yDrawer{width:18rem;margin-left:0}}.sidebar-bg{position:absolute;height:100%;overflow:hidden;top:0;right:0;bottom:0;left:0;background:#202020 center / cover}.sidebar-box{display:flex;justify-content:center}.sidebar-sticky{position:relative;z-index:3}@media screen{.sidebar-sticky{-ms-overflow-style:none;overflow:-moz-scrollbars-none;height:100%;overflow:auto;position:absolute;padding:3rem 0rem;right:2.5rem;left:2.5rem}}.sidebar-sticky::-webkit-scrollbar{display:none}.sidebar-about>h1{color:#fff;font-size:2rem}.sidebar-nav>ul{list-style:none;padding-left:0;margin-bottom:.5rem}a.sidebar-nav-item{width:100%;font-weight:normal;display:block;line-height:1.75;padding:.25rem 0;border-bottom:1px solid rgba(255,255,255,0.2)}a.sidebar-nav-subitem{font-weight:normal;display:block;line-height:1.75;padding:.25rem 0;border-bottom:1px solid rgba(255,255,255,0.2)}@media screen{.y-drawer-scrim{z-index:2}.y-drawer-content{width:18rem;left:-18rem;z-index:3}}.sidebar-social{margin-bottom:.5rem}.sidebar-social>ul{list-style:none;padding-left:0;margin:0 -.25rem}.sidebar-social>ul>li{float:left}.sidebar-social>ul>li>a{display:inline-block;text-align:center;font-size:1.6rem;line-height:3rem;width:3.1249rem;height:4rem;padding:.5rem 0}.sidebar-social>ul li+li{margin-top:0}.fixed-top{position:fixed;top:0;left:0;width:100%;z-index:1}.navbar>.content{padding-top:0;padding-bottom:0;min-height:0;height:0}.menu{display:inline-block;padding:1.75rem 1.5rem;border-bottom:none;margin-left:-1.5rem;color:#9a9a9a !important}.menu::after{content:"\2630"}@media screen and (min-width: 54em){.menu{padding:1.25rem 1.5rem;position:absolute;left:-9999px}.menu:focus{position:static}}.animation-main{pointer-events:none}.loading{display:none}@media print{.menu{display:none}}.animation-main{opacity:0;will-change:opacity}.loading{position:absolute;top:0;right:0;padding:5.25rem 4.5rem;transform-origin:top right;transform:scale(0.33)}.content{position:relative;margin-left:auto;margin-right:auto;padding:5rem 1rem 12rem}@media screen{.content{min-height:100vh}}@media screen and (min-width: 54em){.content{padding:4rem 1rem 12rem;margin-left:19rem;margin-right:3rem}}@media screen and (min-width: 72em){.content{max-width:42rem;margin-left:21rem}}@media screen and (min-width: 88em){.content{float:left;width:100%;margin-left:22rem;margin-right:5rem}}@media screen and (min-width: 96em){.content{max-width:44rem}}@media screen and (min-width: 102em){.content{margin-left:25rem;margin-right:8rem}}.me{width:6.5rem;height:6.5rem;align-self:center;margin-right:20px;border-radius:100%;position:relative}@media screen and (min-width: 40em){.me{width:7rem;height:7rem}}@media screen and (min-width: 54em){.me{width:6.5rem;height:6.5rem}}@media screen and (min-width: 72em){.me{width:7rem;height:7rem}}main>footer{width:100%;position:absolute;bottom:0;left:0;right:0;padding:0 1rem;color:#9a9a9a;font-size:smaller;text-align:center}main>footer>p{margin-bottom:0}html{font-family:'Lato','-apple-system','Verdana','PingFang SC','Helvetica Neue','Arial','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei','sans-serif'}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.heading{font-family:'Lato','-apple-system','Verdana','PingFang SC','Helvetica Neue','Arial','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei','sans-serif'}
+
+</style>
+
+
+<link rel="preload" href="http://localhost:4000/assets/css/hydejack.css?v=6.4.0" as="style" onload="this.rel='stylesheet'">
+
+<style id="_pageStyle">
+
+.content a{color:#4f86aa;border-color:rgba(79,134,170,0.2)}.content a:hover{border-color:#4f86aa}:focus{outline-color:#4f86aa}::selection{color:#fff;background:#4f86aa}::-moz-selection{color:#fff;background:#4f86aa}
+
+</style>
+
+
+<noscript>
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/hydejack.css?v=6.4.0">
+  
+  
+  
+
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather-Light">
+    <style>
+      html { font-family: 'Merriweather-Light','Lato','-apple-system','Verdana','PingFang SC','Helvetica Neue','Arial','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei','sans-serif' }
+      h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .heading { font-family: 'Merriweather-Light','Lato','-apple-system','Verdana','PingFang SC','Helvetica Neue','Arial','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei','sans-serif' }
+    </style>
+  
+
+  
+  <link rel="stylesheet" href="http://localhost:4000/assets/icomoon/style.css">
+</noscript>
+<!--<![endif]-->
+
+</head>
+
+<body>
+  <!-- =============== -->
+<!-- MENU            -->
+<!-- =============== -->
+<div class="navbar fixed-top">
+  <div class="content">
+    <span class="sr-only">Jump to:</span>
+    <a id="_menu" class="menu no-hover" href="#_title">
+      <span class="sr-only">Menu</span>
+    </a>
+  </div>
+</div>
+
+<!-- =============== -->
+<!-- CONTENT         -->
+<!-- =============== -->
+<div id="_yPushState">
+  <div class="fade-in">
+    <main id="_main" class="content" role="main" data-color="#4f86aa" data-image="/assets/img/main_left.jpg">
+      
+
+<article id="post-review/2019/11/22/review-book-pycharm" class="post" role="article">
+  <header>
+    <h1 class="post-title">
+      
+        [리뷰] 파이썬에 참 좋은 PyCharm
+      
+    </h1>
+
+    <p class="post-date heading">
+      <time datetime="2019-11-22T00:00:00+09:00">22 Nov 2019</time>
+      
+
+
+
+
+
+
+
+
+
+in <a href="/category/review/" data-flip="title">Review</a>
+
+      
+
+
+
+
+
+
+
+
+
+on <a href="/tag/review-review/" data-flip="title">Review</a>, <span>Book</span>, <span>Python</span>, <span>Pycharm</span>
+
+    </p>
+
+    
+  <div class="hr" style="padding-bottom:0"></div>
+
+
+  </header>
+  
+
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  
+    <div class="markdown-body">
+
+<div class="head-image"><img src="http://localhost:4000/assets/img/review/2019-11-22-review-book-pycharm-1.jpg"/></div>
+<br/>
+<style>
+.myAd1190 { display:block; width:98%; height: 280px; }
+@media(min-width: 600px) { .myAd1190 { display: none; } }
+</style>
+<ins class="adsbygoogle myAd1190"
+    data-ad-client="ca-pub-9134477021095729"
+    data-ad-slot="6559875097"
+    ></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+      <h2 id="개요">개요</h2>
+<blockquote>
+  <p>본 리뷰는 <code class="highlighter-rouge">비제이퍼블릭</code> 출판사 <code class="highlighter-rouge">"파이썬에 참 좋은 PyCharm(테리엇 저)"</code>를 읽고 얻은 지식을 정리한 글입니다.</p>
+</blockquote>
+
+<ul>
+  <li>목차
+    <ul>
+      <li><a href="#제트브레인jetbrains과-파이참pycharm">제트브레인(Jetbrains)과 파이참(PyCharm)</a></li>
+      <li><a href="#pycharm-체계적인-기능소개">Pycharm 체계적인 기능소개</a></li>
+      <li><a href="#기본서보다-더-뛰어난-실용-기본서">기본서보다 더 뛰어난 (실용) 기본서</a></li>
+      <li><a href="#다시-고급기능으로-화룡정점">다시 고급기능으로… 화룡정점</a></li>
+      <li><a href="#누가-읽어야-하는가">누가 읽어야 하는가?</a></li>
+      <li><a href="#책의-구성-및-요약">책의 구성 및 요약</a></li>
+      <li><a href="#요약하며">요약하며…</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="제트브레인jetbrains과-파이참pycharm">제트브레인(Jetbrains)과 파이참(PyCharm)</h2>
+<hr />
+<p>프로그래머라면 대부분 파이참, 웹스톰, 인텔리제이, 데이터그립과 같은 IDE툴을 한번쯤은 다뤘거나 최소한 들어보기라도 했을 것이다. 이 툴들에게 공통점이 있다면 제트브레인. 즉, 제조사가 동일하다는 것이다.</p>
+
+<p>필자는 프로그램 언어 중 Java를 가장많이 다뤄봤는데 그때 이 회사의 존재를 알게 되었다. 인텔리제이라는 매력적인 툴을 다뤘기 때문이다. 이클립스도 JAVA를 다루기에 훌륭한 도구이지만, 인텔리제이의 강력한 기능에 빠져든 사람은 쉽게 이클립스로 돌아오기 어렵다. 개인차는 있겠지만 개발자 커뮤니티 또는 주위의 개발자 동료들은 생산성이 2~5배 정도는 되는것 같다고 칭찬일색이다. 그동안 다뤘던 가장 매력적인 IDE Tool을 꼽으라면 Visual Studio를 주저앉고 꼽았었는데 제트브레인 社 제품을 사용하면서 순위가 바뀌게 되었다. 장인정신의 냄새가 가득담긴 기가막힌 IDE툴들을 개발하는 멋진 회사이다.</p>
+
+<p>아쉬운 점이 있다면 무료인 Community 버전엔 다소 기능제약이 있어 사용자 층이 두텁지 않다는 점과 그로인해 한글화가 부족하여 참조할만한 레퍼런스가 많지 않다는 점이다. 이렇게 훌륭한 툴에도 Trade-Off는 존재하는 씁쓸한 현실. 그 와중에 지금 리뷰하는 “파이썬에 참 좋은 PyCharm” 책을 만나고 얼마나 반가웠는지 모른다.</p>
+
+<p>인텔리제이는 나름 역사가 깊어 좋은 레퍼런스도 많았지만 Pycharm은 상대적으로 역사가 짧아서인지 좋은 한글 레퍼런스를 찾기가 어렵다. 마침 저자 테리엇님이 먼저 사용하신 좋은 팁들을 체계적으로 구성해 전달하신 덕에 이번 기회에 파이참의 활용 능력을 더욱 높일수 있었다. Python을 다루는 분들이라면 누구나 IDE의 아쉬움에 대해 고민이 많으셨을텐데 이 책을 계기로 Pycharm의 세계에 푹 빠져보시는 것은 어떠실런지..</p>
+
+<h2 id="pycharm-체계적인-기능소개">Pycharm 체계적인 기능소개</h2>
+<hr />
+<p>본 도서에서는 파이참의 기능을 난이도에 따라 체계적으로 구성하였다. 먼저 파이썬을 설치하는 방법에 대해 학습한 후 아래 그림과 같이 파이참을 설치하는 방법을 자세히 다룬다. 설치단계에서부터 주저하는 독자가 없도록 설치과정은 자세하고 친절하게 안내되어있다.
+<img src="https://theorydb.github.io/assets/img/review/2019-11-22-review-book-pycharm-2.jpg" alt="파이참 설치" /></p>
+
+<p>설치가 완료되면 아래 그림과 같이 파이참의 IDE의 UI 레이아웃, 컴포넌트별 구성요소를 자세히 설명한다. 
+<img src="https://theorydb.github.io/assets/img/review/2019-11-22-review-book-pycharm-4.jpg" alt="파이참 레이아웃" /></p>
+
+<p>이어서 자주 활용하는 기능 또는 추천할만한 설정을 통해 파이참에 친숙해지도록 잘 유도한다. 아래 그림은 파이썬의 가상환경을 설정하는 방법으로 자주 활용하는 기능 중 하나의 예시이다.
+<img src="https://theorydb.github.io/assets/img/review/2019-11-22-review-book-pycharm-3.jpg" alt="파이참 기본" /></p>
+
+<p>이렇게 파이참에 친숙해진 후 파이썬의 기본 맛보기에 들어간다. 파이썬의 기초조차 모르는 분들이 파이참에 익숙해지는 것은 조금 두려운 일일 수 있다. 이렇게 단계별로 쉽게 다음 심화단계에 적응할 수 있도록 선수지식을 짜임새 있게 배치한 점이 이 책의 매력이다. 어렵지 않은 입출력, 함수, 자료형, 조건문, 반복문, 주석, 예외처리, 패키지 등을 간단한 예제를 작성하며 파이썬을 알려준다.</p>
+
+<p>단순히 파이썬만 알려주는 것이 아니다. 매번 파이참 도구를 이용해서 예제를 개발하며 그때마다 생산성을 높일 수 있는 파이참의 기능 혹은 단축키를 설명해준다. 파이썬 초보자에게는 두마리 토끼를, 설사 파이썬 능숙자라 할지라도 파이참이 주는 개발 생산성이 얼마나 큰지 비교해볼 수 있는 기회다. 책의 가독성과 짜임새가 훌륭하여 여기까지 진행하는데 겨우 2시간이면 충분했다.</p>
+
+<p>여기까지 진행하면 파이참이 매우 만만해진다. 왠만한 IDE보다 훨씬 파이썬 코드를 능숙하게 다루는 레벨에 오른다. 그리고 다음에 소개할 5장에서 이책의 백미가 등장한다.</p>
+
+<h2 id="기본서보다-더-뛰어난-실용-기본서">기본서보다 더 뛰어난 (실용) 기본서</h2>
+<hr />
+<p>언어의 기초부터 자세하게 설명하는 여느 기본서와는 달리 이 책의 5장은 파이썬이 어떤 분야에서 강점을 가지는지 알 수 있게끔 매우 재밌는 예제들로 시작한다. 뭐하나 재미없거나 신기하지 않은 것이 없다. 예를들어 아래 그림과 같이 처음부터 MS 클라우드인 Azure에 가입하여 AI API를 활용하는 예제가 등장한다.
+<img src="https://theorydb.github.io/assets/img/review/2019-11-22-review-book-pycharm-5.jpg" alt="파이참 기본" /></p>
+
+<p>로컬 PC에서 머신러닝 혹은 딥러닝 예제를 개발한 분들은 많겠지만 클라우드 API를 활용해서 개발한 분은 흔하진 않을 것이다. 파이썬에 API를 접목한 개발을 배우는 것을 넘어서서 AI API 수준이 얼마나 발전했는지 가늠하는 계기가 되고, 나아가 클라우드를 처음 쓰는 분이라면 신세계를 경험할 수 있다. 아래 그림은 zAI 패키지를 활용하여 특정 인물의 사진을 피카소 그림을 학습한 화풍으로 변환한 예제이다.<br />
+<img src="https://theorydb.github.io/assets/img/review/2019-11-22-review-book-pycharm-6.jpg" alt="사진피카소" /></p>
+
+<p>데이터 사이언스를 위한 언어답게 의사결정나무를 통한 머신러닝 예제도 다룬다. 주피터 노트북만 다뤘던 분들도 파이참의 또 다른 매력을 느낄 수 있는 계기가 된다. 아래 사진은 Graphviz 라이브러리를 활용하여 의사결정나무를 도식화한 모습이다. 
+<img src="https://theorydb.github.io/assets/img/review/2019-11-22-review-book-pycharm-7.jpg" alt="Graphviz" /></p>
+
+<p>그 외에도 매우 재밌는 파이썬의 매력을 파이참으로 구현한다. 하루를 온전히 투자할 수 있다면 파이썬으로 이 모든것을 엄청나게 빠르게 해낼 수 있다는 것에 큰 재미를 느끼게 될 것이고, 그 재미에 빠져드는 과정에서 파이참이라는 도구가 내 몸처럼 편안하게 착용되는 느낌을 얻을 수 있다는 점에 이 책에 높은 점수를 주고싶다. 추가로 구현하는 재미있는 예제를 간략히 소개하면 다음과 같다.</p>
+
+<ul>
+  <li>AI API를 활용한 사진을 텍스트로 변환</li>
+  <li>영어를 한글로 번역 후 음성으로 변환</li>
+  <li>파파고 API를 활용한 PDF 문서번역</li>
+  <li>Selenium 및 BeautifulSoup을 활용한 웹브라우저 자동화 및 크롤링</li>
+  <li>암기하고 싶은 내용을 메일로 받기</li>
+  <li>GUI 기능을 활용한 만능사전 만들기</li>
+  <li>오픈 API를 이용한 데이터 수집 및 분석</li>
+  <li>금융데이터 수집, 분석, 시각화</li>
+  <li>MatPlotLib으로 타임 타이머 만들기</li>
+  <li>의사결정나무로 메이저리그 경기결과 예측하기</li>
+  <li>웹대시보드 만들기</li>
+</ul>
+
+<p>열거한 주제만봐도 만들어보고 싶은 욕구가 샘솟았다. 그래서 책도 굉장히 빨리 읽을 수 있었고, 파이썬의 실용성에 다시금 감탄했으며, 파이참의 생산성에 또 한번 놀랐다. 그 과정에서 파이참은 더욱 능숙해졌다.</p>
+
+<h2 id="다시-고급기능으로-화룡정점">다시 고급기능으로… 화룡정점</h2>
+<hr />
+<p>어떤 IDE툴일지라도 생산성을 최고로 높이는 Tip중 최고를 꼽으라면 디버깅이라고 말하고 싶다. 위에서 소개한바와 같이 재밌는 예제를 구현하며 흠뻑빠졌다 나오면 이제 익숙해진 파이참에 대한 자신감이 생기고 자연스럽게 다음 스텝에의 적응이 쉬워진다. 디버깅은 IDE툴을 제대로 다루기 위해선 빼놓을 수 없는 기능인 바 자연스럽게 익힐 수 있도록 짜임새있는 구성으로 배려한다.</p>
+
+<p>더불어 코드 탐색을 손쉽게 다룰 수 있는 방법, 코드 작성 Tip, 그 외의 기능에 대해 소개한다. 아래 그림은 다른 프로그램에서 파일열기, 탐색바로 이동하기, 함수단위로 이동하기 등 다양한 Tip에 대한 기술이다.
+<img src="https://theorydb.github.io/assets/img/review/2019-11-22-review-book-pycharm-8.jpg" alt="다양한기능" /></p>
+
+<p>아래 사진은 DB Navigator 플러그인을 설치하여 활용하는 방법을 제시한다. 이처럼 파이참의 본 기능을 충분히 다진 후 다양한 확장기능을 활용할 수 있도록 파이참에 대해 깊이있게 다룬다.
+<img src="https://theorydb.github.io/assets/img/review/2019-11-22-review-book-pycharm-9.jpg" alt="DB Navigator" /></p>
+
+<ul>
+  <li><a href="http://www.bjpublic.co.kr/?fbclid=IwAR2ADMg2d817hzrDG-AYdpA-PJ79PfDhi62QjYRmXAJMMI7TpNg2AHBIMJY">책소개 Link</a></li>
+  <li><a href="https://github.com/bjpublic/pycharm">Github Link</a></li>
+</ul>
+
+<h2 id="누가-읽어야-하는가">누가 읽어야 하는가?</h2>
+<hr />
+<ul>
+  <li>
+    <p>다른 IDE 환경에 불편이 많아 파이참의 매력을 알고 싶은 분.</p>
+  </li>
+  <li>
+    <p>파이썬의 매력을 제대로 알고싶은 파이썬 입문자.</p>
+  </li>
+  <li>
+    <p>파이썬의 깊이보다는 넓이를 폭넓게 파악하고 싶은 기획자, 경영자, 문과생 등</p>
+  </li>
+  <li>
+    <p>기타 파이썬, AI, 데이터분석에 관심이 있는 분.</p>
+  </li>
+</ul>
+
+<h2 id="책의-구성-및-요약">책의 구성 및 요약</h2>
+<hr />
+<p>이 책은 크게 세부분으로 구성되며, 각 파트에서 다루는 내용을 아래와 같이 요약해 보았다.</p>
+
+<ul>
+  <li><strong>1. 파이썬/파이참 설치 및 기본연습 (1 ~ 4장)</strong>
+    <ul>
+      <li>파이썬과 파이참 설치하기</li>
+      <li>파이참 프로젝트, 레아이웃, 초기설정 익히기</li>
+      <li>파이썬의 기초학습
+        <ul>
+          <li>입출력, 함수, 자료형, 조건문, 반복문, 주석, 예외처리, 패키지 등</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>2. 재미있는 예제구현(5장)</strong>
+    <ul>
+      <li>AI API, 오픈 API, 수집, 크롤링 활용</li>
+      <li>GUI 및 시각화, 자동화 및 웹개발</li>
+      <li>의사결정나무 머신러닝 예제 등</li>
+    </ul>
+  </li>
+  <li><strong>3. 파이참 심화(6장)</strong>
+    <ul>
+      <li>디버깅 및 확장기능 활용</li>
+      <li>코드 탐색 및 작성 Tip 등</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="요약하며">요약하며…</h2>
+<hr />
+<p>제트브레인사의 또다른 명작 IDE <code class="highlighter-rouge">파이참의 활용방법을 다룬 현시점 국내 유일무이한 도서</code>이다. 처음부터 끝까지 독자가 어려워 나가떨어지는일이 없도록 흥미의 레벨을 서서히 올려가는 가독성있고 짜임새 있는 구성이 이 책의 백미이다.</p>
+
+<p>더불어 초보자 또는 파이썬 입문자들도 파이썬을 활용하여 어떤 재밌고 편리한 기능을 구현할 수 있는지 예제를 통해 실습해보면서 <code class="highlighter-rouge">스스로의 창의성에 파이썬을 접목시켜볼 수 있는 좋은 계기</code>를 얻게된다는 점이 큰 장점이라고 할 수 있다.</p>
+
+<p>파이참은 다양하고 파워풀한 기능을 제공하는 대신 초반에 익숙해지기 약간 까다로운 진입장벽이 있는 편인데 재미있는 예제에 푹빠져 하나씩 팁을 배우다보면 어느새 책을 덮을때 즈음 파이참이 수족처럼 느껴지는 신기한 현상을 경험할 수 있다. 저자는 독자로 하여금 흥미를 잃지않고 숨쉬듯 자연스럽게 훌륭한 IDE를 익힐 수 있게 인도해주는 좋은 선생님 역할을 충실히 수행해냈다 생각한다.</p>
+
+<p>물론 GUI IDE를 다루는 책의 특성 상 컬러판이었다면 가독성을 보다 높여주었을텐데 라는 아쉬운 마음도 있다. 대신 가독성이 좋은 책이라 흑백으로 봐도 큰 불편함은 없다.</p>
+
+<p>간만에 프로그램을 처음 배울때 처럼 호기심과 재미만으로, 공부보다는 취미생활하는 느낌을 주었던 책이다. 더불어 일상생활에 사진이나 데이터를 관리하고 시각화하는데 좋은 영감을 얻기도 해 상당히 만족스럽게 읽었다. 파이참을 몇년 간 다뤘음에도 알지못했던 Tip을 얻고 다시금 정리할 기회를 얻었음에 감사드리고, 파이참에 관심이 있거나 다루기 어려웠던 독자분들은 반드시 읽어보시길 추천드린다. <code class="highlighter-rouge">파이참을 익히는 가장 빠른 지름길</code>이라고 생각한다.</p>
+
+<blockquote>
+  <p>&lt;비제이퍼블릭 출판사&gt;</p>
+
+  <p>책 한권만으로도 실무를 수행할 수 있을 정도의 실용성, 기존 출간된 책에서 다뤄지지 않았던 가려웠던 구석을 시원하게 긁어주는 참신함, 피상적인 접근으로 그런가보다 넘어가기 쉬운 지식에 대한 깊이있는 고찰을 담은 장인 냄새가 나는 출판사입니다. 더불어 참신한 해외 번역서, 최신 트렌트를 겨냥하는 양질의 서적을 자주 출간하여 필자의 책장에도 어느덧 십여권의 책이 꼽혀있네요. IT 실력을 향상시키는데 있어 뭔가 허전하거나 시간은 투자대비 내공이 채워지지 않는 공허함이 생긴다면 비제이퍼블릭 출판사의 책 목록을 살펴보시기 바랍니다.</p>
+</blockquote>
+
+<p><a href="http://www.bjpublic.co.kr/">비제이퍼블릭 바로가기</a></p>
+
+      <br/>
+      <br/>
+      <!-- 블로그-하단-반응형 -->
+      <ins class="adsbygoogle"
+          style="display:block; width:100%; height:300px;"
+          data-ad-client="ca-pub-9134477021095729"
+          data-ad-slot="2380354290"
+          data-ad-format="auto"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+    <script>
+
+    </script>
+  
+
+</article>
+
+  <hr class="dingbat" />
+
+  <div class="share">
+      <h2>Share this post</h2>
+      <div class="share-body">
+        <a href="http://twitter.com/share?text=[리뷰] 파이썬에 참 좋은 PyCharm&amp;url=http://localhost:4000/review/2019/11/22/review-book-pycharm/"
+    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+            <span class="icon-twitter">
+            </span>
+        </a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/review/2019/11/22/review-book-pycharm/"
+    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+            <span class="icon-facebook">
+            </span>
+        </a>
+    </div>
+  </div>
+  <br/>
+
+
+
+
+
+
+  <aside class="author" role="complementary">
+    <div class="author">
+  <h2 class="page-title hr">
+    About
+  </h2>
+<div class="author-body">
+  
+    
+  
+
+  
+
+  <img
+    src="/assets/img/me.jpg"
+    class="me"
+    alt="min"
+    srcset="/assets/img/me.jpg 1x,/assets/img/me.jpg 2x"
+    
+  />
+
+
+  
+  <div class="author-body-description">
+    <p>훌륭한 Data scientist가 되고 싶은 개발자.</p>
+
+  </div>
+</div>
+</div>
+
+  </aside>
+
+
+
+
+
+<aside class="related" role="complementary">
+  <h2 class="hr">Related Posts</h2>
+
+  <ul class="related-posts">
+    
+      
+      
+      
+        
+        
+          
+
+
+<li class="h4">
+  <a href="/review/2020/01/22/review-book-tableau/" data-flip="title">
+    <span>[리뷰] 태블로 굿모닝 굿애프터눈</span>
+  </a>
+  <small><time datetime="2020-01-22T00:00:00+09:00">
+    22 Jan 2020
+  </time></small>
+</li>
+
+        
+      
+        
+        
+          
+
+
+<li class="h4">
+  <a href="/review/2020/01/17/review-book-alphazero/" data-flip="title">
+    <span>[리뷰] 알파제로를 분석하며 배우는 인공지능</span>
+  </a>
+  <small><time datetime="2020-01-17T00:00:00+09:00">
+    17 Jan 2020
+  </time></small>
+</li>
+
+        
+      
+        
+        
+          
+
+
+<li class="h4">
+  <a href="/review/2019/12/27/review-book-us-stock/" data-flip="title">
+    <span>[리뷰] 미국 주식 스타터팩</span>
+  </a>
+  <small><time datetime="2019-12-27T00:00:00+09:00">
+    27 Dec 2019
+  </time></small>
+</li>
+
+        
+      
+        
+        
+      
+    
+  </ul>
+</aside>
+
+
+
+      
+        <aside class="comments" role="complementary">
+  <h2>Comments</h2>
+  <hr/>
+
+  <div id="disqus_thread"></div>
+
+  <script>
+    !function(s,i){function e(e){var t=s.pageYOffset||i.body.scrollTop;s.DISQUS&&!s._disqusThis&&!s._disqusFirst&&t+s.innerHeight>=s._disqusThreadOffsetTop&&(s._disqusThis=!0,s.DISQUS.reset({reload:!0,config:d}))}var d=function(){this.page.title="[리뷰] 파이썬에 참 좋은 PyCharm",this.page.identifier="/review/2019/11/22/review-book-pycharm",this.page.url="http://localhost:4000/review/2019/11/22/review-book-pycharm/"};s._disqusFirst=void 0===s._disqusFirst||s._disqusFirst,s._disqusLoading=void 0!==s._disqusLoading&&s._disqusLoading,s._disqusThis=!1,s._disqusThreadOffsetTop=i.getElementById("disqus_thread").offsetTop,s._disqusLoading?s._disqusFirst=!1:(s._disqusLoading=!0,loadJSDeferred("//theorydb.disqus.com/embed.js"),s.addEventListener?s.addEventListener("scroll",e,{passive:!0}):s.attachEvent?s.attachEvent("onscroll",e):s.onscroll=e)}(window,document);
+
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</aside>
+
+      
+
+      <footer>
+  <hr/>
+  
+    <p>© 2019.04. by theorydb</p>
+
+  
+  <p>
+    <code>Powered by <a href="https://theorydb.github.io/">theorydb</a></code>
+  </p>
+</footer>
+
+    </main>
+    <div class="right-side">
+  <div class="ad-first">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- 블로그-상단-모바일 -->
+    <ins class="adsbygoogle"
+         style="display:inline-block;width:100%;"
+         data-ad-client="ca-pub-9134477021095729"
+         data-ad-slot="6559875097"
+         data-ad-format="auto"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+<br/>
+<br/>
+  <div class="ad-second">
+    <!-- 블로그-스카이스크래퍼 -->
+    <ins class="adsbygoogle"
+         style="display:inline-block;max-width:320px;width:100%;height:600px"
+         data-ad-client="ca-pub-9134477021095729"
+         data-ad-slot="6826803092"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+</div>
+
+  </div>
+  <div id="_yDrawer">
+  <div id="_sidebar" class="sidebar">
+    <div class="sidebar-bg" style="background-color:#4f86aa;background-image:url(/assets/img/main_left.jpg)"></div>
+    <header class="sidebar-sticky" role="banner">
+      <br/>
+      <div class="sidebar-about">
+        <h1><a id="_title" href="/">TheoryDB</a></h1>
+        <p>All roads lead to data.</p>
+
+      </div>
+
+      <br/>
+      <br/>
+      <nav class="sidebar-nav heading" role="navigation">
+        <span class="sr-only">Navigation:</span>
+<ul>
+  
+
+  
+
+  
+  
+  
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-1"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/think/">Think</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/think-think/">Think</a>
+             </li>
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-2"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/envops/">EnvOps</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-3"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/dev/">Dev</a>
+       <label class="folder" for="list-item-3">▾</label>
+    </div>
+     <ul class="list-body">
+       
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/dev-statisticsr/">Statistics & R</a>
+             </li>
+           
+         
+           
+         
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/dev-ml/">ML</a>
+             </li>
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/dev-dl/">DL</a>
+             </li>
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/dev-papertomath/">PaperToMath</a>
+             </li>
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/dev-competition/">Competition</a>
+             </li>
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/dev-rdbms/">Rdbms</a>
+             </li>
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-4"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/startup/">Startup</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/startup-startup/">Startup</a>
+             </li>
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-5"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/unclassified/">Unclassified</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/unclassified-unclassified/">Unclassified</a>
+             </li>
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-6"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/review/">Review</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+         
+           
+         
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/review-review/">Review</a>
+             </li>
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-7"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/favorites/">Favorites</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/favorites-favorites/">Favorites</a>
+             </li>
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-8"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/about/">About</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+</ul>
+
+      </nav>
+    <br/>
+
+    <form action="/search">
+      <div class="tipue_search_left">
+        <img src="/assets/tipuesearch/search.png" class="tipue_search_icon">
+      </div>
+      <div class="tipue_search_right">
+        <input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required></div>
+      <div style="clear: both;"></div>
+    </form>
+
+    <br/>
+      <div class="sidebar-box">
+        
+          
+  
+
+  
+
+  <img
+    src="/assets/img/me.jpg"
+    class="me"
+    alt="min"
+    srcset="/assets/img/me.jpg 1x,/assets/img/me.jpg 2x"
+    
+  />
+
+
+        
+      </div>
+      <p>Data Scientist의 길..</p>
+
+      
+      
+        <div class="sidebar-social">
+          <span class="sr-only">Social:</span>
+<ul>
+  
+    
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="https://facebook.com/cantouchmin">
+    <span class="icon-facebook" title="Facebook"></span>
+    <span class="sr-only">Facebook</span>
+  </a>
+</li>
+
+  
+    
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="https://github.com/theorydb">
+    <span class="icon-github" title="GitHub"></span>
+    <span class="sr-only">GitHub</span>
+  </a>
+</li>
+
+  
+    
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="mailto:theorydb@gmail.com">
+    <span class="icon-mail" title="Email"></span>
+    <span class="sr-only">Email</span>
+  </a>
+</li>
+
+  
+    
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="https://theorydb.github.io/feed.xml">
+    <span class="icon-rss2" title="RSS"></span>
+    <span class="sr-only">RSS</span>
+  </a>
+</li>
+
+  
+</ul>
+
+        </div>
+      
+    </header>
+  </div>
+</div>
+
+</div>
+
+<!-- =============== -->
+<!-- SCRIPTS         -->
+<!-- =============== -->
+
+<script>
+  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+  ga('create', 'UA-137374202-1', 'auto');
+  ga('send', 'pageview');
+  loadJSDeferred('https://www.google-analytics.com/analytics.js');
+</script>
+
+
+
+
+
+<!--[if gt IE 8]><!---->
+<script src="//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  WebFont.load({
+    
+    google: {
+      families: 'Merriweather-Light'.split('|')
+    },
+    
+
+    custom: {
+      families: ['icomoon'],
+      urls: ['/assets/icomoon/style.css']
+    }
+  });
+</script>
+<!--<![endif]-->
+
+
+  <!--[if gt IE 9]><!---->
+  
+  <script>loadJSDeferred('/assets/js/hydejack.js?v=6.4.0');</script>
+
+  
+  <!--<![endif]-->
+
+
+
+</body>
+
+</html>

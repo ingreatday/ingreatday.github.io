@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="en"><!--
+ __  __                __                                     __
+/\ \/\ \              /\ \             __                    /\ \
+\ \ \_\ \   __  __    \_\ \      __   /\_\      __       ___ \ \ \/'\
+ \ \  _  \ /\ \/\ \   /'_` \   /'__`\ \/\ \   /'__`\    /'___\\ \ , <
+  \ \ \ \ \\ \ \_\ \ /\ \L\ \ /\  __/  \ \ \ /\ \L\.\_ /\ \__/ \ \ \\`\
+   \ \_\ \_\\/`____ \\ \___,_\\ \____\ _\ \ \\ \__/.\_\\ \____\ \ \_\ \_\
+    \/_/\/_/ `/___/> \\/__,_ / \/____//\ \_\ \\/__/\/_/ \/____/  \/_/\/_/
+                /\___/                \ \____/
+                \/__/                  \/___/
+
+Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
+-->
+
+
+
+
+
+
+
+
+
+<head>
+  <!-- =============== -->
+<!-- META            -->
+<!-- =============== -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="naver-site-verification" content="22c5b4ef3bfda7fc6100671413989219de7a4ac8"/>
+<meta property="og:title" content="[리뷰] Do it! 지옥에서 온 문서관리자 깃&깃허브 입문">
+<meta property="og:type" content="article">
+
+
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/img/review/2019-12-26-review-book-git-github-1.jpg">
+  <br/>
+
+
+<meta property="og:image:width" content="640" />
+<meta property="og:image:height" content="360" />
+
+
+
+  <title>[리뷰] Do it! 지옥에서 온 문서관리자 깃&깃허브 입문 &middot; TheoryDB</title>
+
+
+
+<meta name="description" content="개요
+
+  본 리뷰는 이지스퍼블리싱 출판사 "Do it! 지옥에서 온 문서관리자 깃&amp;깃허브 입문(이고잉,고경희 저)"을 읽고 지식을 정리한 글입니다.
+
+
+
+  목차
+    
+      Git은 뭐고? GitHub는 또 뭐여?
+      Git과 친해지기 어려운 이유
+      이 책을 한마디로 표현하면 뚫어뻥
+      누가 읽어야 하는가?
+      책의 구성 및 요약
+      요약하며…
+    
+  
+
+
+">
+<meta property="og:description" content="개요
+
+  본 리뷰는 이지스퍼블리싱 출판사 "Do it! 지옥에서 온 문서관리자 깃&amp;깃허브 입문(이고잉,고경희 저)"을 읽고 지식을 정리한 글입니다.
+
+
+
+  목차
+    
+      Git은 뭐고? GitHub는 또 뭐여?
+      Git과 친해지기 어려운 이유
+      이 책을 한마디로 표현하면 뚫어뻥
+      누가 읽어야 하는가?
+      책의 구성 및 요약
+      요약하며…
+    
+  
+
+
+">
+
+
+
+<!-- tipuesearch -->
+<link rel="stylesheet" href="/assets/tipuesearch/css/tipuesearch.css">
+
+
+<!-- =============== -->
+<!-- LINKS           -->
+<!-- =============== -->
+<link rel="canonical" href="http://localhost:4000/review/2019/12/26/review-book-git-github/">
+<meta property="og:url" content="http://localhost:4000/review/2019/12/26/review-book-git-github/">
+
+<link rel="alternate" type="application/atom+xml" title="TheoryDB Feed" href="http://localhost:4000/feed.xml">
+
+
+  <link rel="prev" href="http://localhost:4000/review/2019/12/15/review-book-GAN/">
+
+
+
+  <link rel="next" href="http://localhost:4000/review/2019/12/27/review-book-us-stock/">
+
+
+<link rel="apple-touch-icon" href="http://localhost:4000/apple-touch-icon.png">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+<!-- Place favicon.ico in the root directory -->
+
+<!-- =============== -->
+<!-- SCRIPTS         -->
+<!-- =============== -->
+<script>
+  !function(n,e){function t(n,e){n.onload=function(){this.onerror=this.onload=null,e(null,n)},n.onerror=function(){this.onerror=this.onload=null,e(new Error("Failed to load "+this.src),n)}}function o(n,e){n.onreadystatechange=function(){"complete"!=this.readyState&&"loaded"!=this.readyState||(this.onreadystatechange=null,e(null,n))}}n._loaded=!1,n.loadJSDeferred=function(a,d){function r(){n._loaded=!0;var r=e.createElement("script");r.src=a,d&&(("onload"in r?t:o)(r,d),r.onload||t(r,d));var l=e.getElementsByTagName("script")[0];l.parentNode.insertBefore(r,l)}n._loaded?r():n.addEventListener?n.addEventListener("load",r,!1):n.attachEvent?n.attachEvent("onload",r):n.onload=r}}(window,document);
+
+  !function(e){"use strict";var n=function(n,t,o){function i(e){if(a.body)return e();setTimeout(function(){i(e)})}function r(){l.addEventListener&&l.removeEventListener("load",r),l.media=o||"all"}var d,a=e.document,l=a.createElement("link");if(t)d=t;else{var f=(a.body||a.getElementsByTagName("head")[0]).childNodes;d=f[f.length-1]}var s=a.styleSheets;l.rel="stylesheet",l.href=n,l.media="only x",i(function(){d.parentNode.insertBefore(l,t?d:d.nextSibling)});var u=function(e){for(var n=l.href,t=s.length;t--;)if(s[t].href===n)return e();setTimeout(function(){u(e)})};return l.addEventListener&&l.addEventListener("load",r),l.onloadcssdefined=u,u(r),l};"undefined"!=typeof exports?exports.loadCSS=n:e.loadCSS=n}("undefined"!=typeof global?global:this);
+
+  !function(t){if(t.loadCSS){var e=loadCSS.relpreload={};if(e.support=function(){try{return t.document.createElement("link").relList.supports("preload")}catch(t){return!1}},e.poly=function(){for(var e=t.document.getElementsByTagName("link"),r=0;r<e.length;r++){var n=e[r];"preload"===n.rel&&"style"===n.getAttribute("as")&&(t.loadCSS(n.href,n,n.getAttribute("media")),n.rel=null)}},!e.support()){e.poly();var r=t.setInterval(e.poly,300);t.addEventListener&&t.addEventListener("load",function(){e.poly(),t.clearInterval(r)}),t.attachEvent&&t.attachEvent("onload",function(){t.clearInterval(r)})}}}(this);
+
+  window.disablePushState = false;
+  window.disableDrawer = false;
+</script>
+
+<!--[if lt IE 9]>
+<script src="https://unpkg.com/html5shiv/dist/html5shiv.min.js"></script>
+<![endif]-->
+
+<!-- =============== -->
+<!-- STYLES          -->
+<!-- =============== -->
+<!--[if gt IE 8]><!---->
+<style>
+  
+  article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}*{box-sizing:border-box}html,body{margin:0;padding:0}html{font-size:16px;line-height:1.75}body{color:#333;background-color:#fff;overflow-y:scroll}a{text-decoration:none}.lead{margin-left:-1rem;margin-right:-1rem}img,.img{display:block;max-width:100%;margin-bottom:1rem;border:none}img.lead,.img.lead{max-width:calc(100% + 2rem);width:calc(100% + 2rem)}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.heading{font-weight:bold;text-rendering:optimizeLegibility}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{margin:1.6rem 0 1rem;line-height:1.6}h1,.h1{font-size:2rem;line-height:1.25}h2,.h2{font-size:1.5rem}h3,.h3{font-size:1.17em}p{margin-top:0;margin-bottom:1rem}p.lead{font-size:1.25rem;font-weight:300;padding:0 1rem}ul,ol,dl{margin-top:0;margin-bottom:1rem}ul,ol{padding-left:1.25rem}hr{position:relative;margin:1.5rem 0;border:0;border-top:1px solid #eee}.hr{padding-bottom:.5rem;border-bottom:1px solid #eee;margin-bottom:1.5rem}h4,h5,h6,.h4,.h5,.h6{margin-bottom:0.5rem;font-size:1rem}table{margin-bottom:1rem;width:100%;width:calc(100% + 2rem);margin-left:-1rem;border:1px solid #e5e5e5;border-collapse:collapse;border-spacing:0}td,th{padding:.25rem .5rem;border:1px solid #e5e5e5}td:first-child,th:first-child{padding-left:1rem}td:last-child,th:last-child{padding-right:1rem}thead+tbody,tbody+tbody,tfoot{border-top:3px double #e5e5e5}tbody tr:nth-child(odd) td,tbody tr:nth-child(odd) th{background-color:#f9f9f9}footer{margin-bottom:2rem}.page,.post{margin-bottom:3em}.page li+li,.post li+li{margin-top:.25rem}.page>header,.post>header{margin-bottom:2rem}.page-title,.post-title{margin-top:0}.post-date{display:block;margin-top:-0.5rem;margin-bottom:1rem;color:#9a9a9a}.related-posts{padding-left:0;list-style:none}.related-posts>li,.related-posts>li+li{margin-top:1rem}.related-posts>li>small,.related-posts>li+li>small{font-size:75%;color:#9a9a9a}.message{margin-bottom:1rem;padding:1rem;color:#787878;background-color:#f9f9f9;margin-left:-1rem;margin-right:-1rem}body,main{position:relative;overflow-x:hidden}@media screen{body::before{content:'';background:#e5e5e5;position:absolute;left:0;top:0;bottom:0}}@media screen and (min-width: 40em){html{font-size:17px}}@media screen and (min-width: 54em){html{font-size:16px}}@media screen and (min-width: 88em){html{font-size:17px}}@media screen and (min-width: 125em){html{font-size:18px}}.sr-only{display:none}.clearfix,.sidebar-social::after,.clearafter::after{content:"";display:table;clear:both}a,.a{position:relative;padding-bottom:.15rem;border-style:hidden}.img{overflow:hidden;background-color:#f9f9f9}.img>img{margin:0;width:100%;height:100%}.sixteen-nine{position:relative}.sixteen-nine::before{display:block;content:"";width:100%;padding-top:56.25%}.sixteen-nine>*{position:absolute;top:0;left:0;right:0;bottom:0}h1+hr,h2+hr,h3+hr,h4+hr,h5+hr,h6+hr{margin-top:0}.fade-in{animation-duration:500ms;animation-name:fade-in;animation-fill-mode:forwards}@keyframes fade-in{from{transform:translateY(-2rem);opacity:0}50%{transform:translateY(-2rem);opacity:0}to{transform:translateY(0);opacity:1}}.mb6{margin-bottom:10rem}.sidebar{color:rgba(255,255,255,0.75);text-align:left}.sidebar::before{content:"";position:absolute;z-index:2;top:0;left:0;bottom:0;right:0;background:linear-gradient(to bottom, rgba(32,32,32,0) 0%, rgba(32,32,32,0.5) 100%)}.sidebar a{color:#fff;border-bottom-color:rgba(255,255,255,0.2)}.right-side{width:100%;margin-left:auto;margin-right:auto}.right-side .ad-first{text-align:center}@media screen{.right-side{max-width:38rem;min-height:100vh}.right-side .ad-second{display:none}}@media screen and (min-width: 54em){.right-side{margin-left:20rem;margin-right:1rem;padding:4rem 1rem 12rem}.right-side .ad-second{text-align:center;display:block}}@media screen and (min-width: 72em){.right-side{margin-left:22rem;max-width:42rem}}@media screen and (min-width: 88em){.right-side{width:162px;margin-left:0rem;margin-right:0rem;padding:0rem;margin-top:10rem;display:block;float:left}}@media screen and (min-width: 96em){.right-side{width:300px;margin-right:0rem}}#_yDrawer{position:relative}@media screen{#_yDrawer{min-height:640px;min-height:100vh}}@media screen and (min-width: 54em){#_yDrawer{width:18rem;margin-left:0}}.sidebar-bg{position:absolute;height:100%;overflow:hidden;top:0;right:0;bottom:0;left:0;background:#202020 center / cover}.sidebar-box{display:flex;justify-content:center}.sidebar-sticky{position:relative;z-index:3}@media screen{.sidebar-sticky{-ms-overflow-style:none;overflow:-moz-scrollbars-none;height:100%;overflow:auto;position:absolute;padding:3rem 0rem;right:2.5rem;left:2.5rem}}.sidebar-sticky::-webkit-scrollbar{display:none}.sidebar-about>h1{color:#fff;font-size:2rem}.sidebar-nav>ul{list-style:none;padding-left:0;margin-bottom:.5rem}a.sidebar-nav-item{width:100%;font-weight:normal;display:block;line-height:1.75;padding:.25rem 0;border-bottom:1px solid rgba(255,255,255,0.2)}a.sidebar-nav-subitem{font-weight:normal;display:block;line-height:1.75;padding:.25rem 0;border-bottom:1px solid rgba(255,255,255,0.2)}@media screen{.y-drawer-scrim{z-index:2}.y-drawer-content{width:18rem;left:-18rem;z-index:3}}.sidebar-social{margin-bottom:.5rem}.sidebar-social>ul{list-style:none;padding-left:0;margin:0 -.25rem}.sidebar-social>ul>li{float:left}.sidebar-social>ul>li>a{display:inline-block;text-align:center;font-size:1.6rem;line-height:3rem;width:3.1249rem;height:4rem;padding:.5rem 0}.sidebar-social>ul li+li{margin-top:0}.fixed-top{position:fixed;top:0;left:0;width:100%;z-index:1}.navbar>.content{padding-top:0;padding-bottom:0;min-height:0;height:0}.menu{display:inline-block;padding:1.75rem 1.5rem;border-bottom:none;margin-left:-1.5rem;color:#9a9a9a !important}.menu::after{content:"\2630"}@media screen and (min-width: 54em){.menu{padding:1.25rem 1.5rem;position:absolute;left:-9999px}.menu:focus{position:static}}.animation-main{pointer-events:none}.loading{display:none}@media print{.menu{display:none}}.animation-main{opacity:0;will-change:opacity}.loading{position:absolute;top:0;right:0;padding:5.25rem 4.5rem;transform-origin:top right;transform:scale(0.33)}.content{position:relative;margin-left:auto;margin-right:auto;padding:5rem 1rem 12rem}@media screen{.content{min-height:100vh}}@media screen and (min-width: 54em){.content{padding:4rem 1rem 12rem;margin-left:19rem;margin-right:3rem}}@media screen and (min-width: 72em){.content{max-width:42rem;margin-left:21rem}}@media screen and (min-width: 88em){.content{float:left;width:100%;margin-left:22rem;margin-right:5rem}}@media screen and (min-width: 96em){.content{max-width:44rem}}@media screen and (min-width: 102em){.content{margin-left:25rem;margin-right:8rem}}.me{width:6.5rem;height:6.5rem;align-self:center;margin-right:20px;border-radius:100%;position:relative}@media screen and (min-width: 40em){.me{width:7rem;height:7rem}}@media screen and (min-width: 54em){.me{width:6.5rem;height:6.5rem}}@media screen and (min-width: 72em){.me{width:7rem;height:7rem}}main>footer{width:100%;position:absolute;bottom:0;left:0;right:0;padding:0 1rem;color:#9a9a9a;font-size:smaller;text-align:center}main>footer>p{margin-bottom:0}html{font-family:'Lato','-apple-system','Verdana','PingFang SC','Helvetica Neue','Arial','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei','sans-serif'}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.heading{font-family:'Lato','-apple-system','Verdana','PingFang SC','Helvetica Neue','Arial','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei','sans-serif'}
+
+</style>
+
+
+<link rel="preload" href="http://localhost:4000/assets/css/hydejack.css?v=6.4.0" as="style" onload="this.rel='stylesheet'">
+
+<style id="_pageStyle">
+
+.content a{color:#4f86aa;border-color:rgba(79,134,170,0.2)}.content a:hover{border-color:#4f86aa}:focus{outline-color:#4f86aa}::selection{color:#fff;background:#4f86aa}::-moz-selection{color:#fff;background:#4f86aa}
+
+</style>
+
+
+<noscript>
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/hydejack.css?v=6.4.0">
+  
+  
+  
+
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather-Light">
+    <style>
+      html { font-family: 'Merriweather-Light','Lato','-apple-system','Verdana','PingFang SC','Helvetica Neue','Arial','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei','sans-serif' }
+      h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .heading { font-family: 'Merriweather-Light','Lato','-apple-system','Verdana','PingFang SC','Helvetica Neue','Arial','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei','sans-serif' }
+    </style>
+  
+
+  
+  <link rel="stylesheet" href="http://localhost:4000/assets/icomoon/style.css">
+</noscript>
+<!--<![endif]-->
+
+</head>
+
+<body>
+  <!-- =============== -->
+<!-- MENU            -->
+<!-- =============== -->
+<div class="navbar fixed-top">
+  <div class="content">
+    <span class="sr-only">Jump to:</span>
+    <a id="_menu" class="menu no-hover" href="#_title">
+      <span class="sr-only">Menu</span>
+    </a>
+  </div>
+</div>
+
+<!-- =============== -->
+<!-- CONTENT         -->
+<!-- =============== -->
+<div id="_yPushState">
+  <div class="fade-in">
+    <main id="_main" class="content" role="main" data-color="#4f86aa" data-image="/assets/img/main_left.jpg">
+      
+
+<article id="post-review/2019/12/26/review-book-git-github" class="post" role="article">
+  <header>
+    <h1 class="post-title">
+      
+        [리뷰] Do it! 지옥에서 온 문서관리자 깃&깃허브 입문
+      
+    </h1>
+
+    <p class="post-date heading">
+      <time datetime="2019-12-26T00:00:00+09:00">26 Dec 2019</time>
+      
+
+
+
+
+
+
+
+
+
+in <a href="/category/review/" data-flip="title">Review</a>
+
+      
+
+
+
+
+
+
+
+
+
+on <a href="/tag/review-review/" data-flip="title">Review</a>, <span>Book</span>, <span>Git</span>, <span>Github</span>, <span>Introduction</span>
+
+    </p>
+
+    
+  <div class="hr" style="padding-bottom:0"></div>
+
+
+  </header>
+  
+
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  
+    <div class="markdown-body">
+
+<div class="head-image"><img src="http://localhost:4000/assets/img/review/2019-12-26-review-book-git-github-1.jpg"/></div>
+<br/>
+<style>
+.myAd1190 { display:block; width:98%; height: 280px; }
+@media(min-width: 600px) { .myAd1190 { display: none; } }
+</style>
+<ins class="adsbygoogle myAd1190"
+    data-ad-client="ca-pub-9134477021095729"
+    data-ad-slot="6559875097"
+    ></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+      <h2 id="개요">개요</h2>
+<blockquote>
+  <p>본 리뷰는 <code class="highlighter-rouge">이지스퍼블리싱</code> 출판사 <code class="highlighter-rouge">"Do it! 지옥에서 온 문서관리자 깃&amp;깃허브 입문(이고잉,고경희 저)"</code>을 읽고 지식을 정리한 글입니다.</p>
+</blockquote>
+
+<ul>
+  <li>목차
+    <ul>
+      <li><a href="#git은-뭐고-github는-또-뭐여">Git은 뭐고? GitHub는 또 뭐여?</a></li>
+      <li><a href="#git과-친해지기-어려운-이유">Git과 친해지기 어려운 이유</a></li>
+      <li><a href="#이-책을-한마디로-표현하면-뚫어뻥">이 책을 한마디로 표현하면 뚫어뻥</a></li>
+      <li><a href="#누가-읽어야-하는가">누가 읽어야 하는가?</a></li>
+      <li><a href="#책의-구성-및-요약">책의 구성 및 요약</a></li>
+      <li><a href="#요약하며">요약하며…</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="git은-뭐고-github는-또-뭐여">Git은 뭐고? GitHub는 또 뭐여?</h2>
+<hr />
+<p>아래와 같은 곤란한 상황… 당신도 분명 겪어보셨을 것이다.<br />
+<img src="https://theorydb.github.io/assets/img/fun/final-real.jpg" alt="그림1" /></p>
+
+<blockquote>
+  <p><strong>“당신이 무엇을 상상하든 이 파일은 최종파일이 아니다.</strong></p>
+</blockquote>
+
+<p>설사 최종파일이 나왔다 치자. 다음은 또 무슨일이 기다리고 있을까?</p>
+
+<ul>
+  <li>기껏 회사에서 수정했건만.. 집에서 고치려면 USB로 복사해야 하나?</li>
+  <li>열심히 수정했는데 다른 사람이 손데면서 다 날라갔다!</li>
+</ul>
+
+<p>보기만 해도 짜증나는 이 문제들을 Git은 지옥이라고 표현한다. 그렇다면 해결책은 무엇인가? 책 제목에서도 알 수 있듯이 바로 <code class="highlighter-rouge">지옥에서 온 문서관리자 깃&amp;깃허브</code>이다.</p>
+
+<p>쉽게 정리하자면 Git은 분산(<code class="highlighter-rouge">여러명이 수정할 수 있다.</code>)버전(<code class="highlighter-rouge">최최..종을 알아서 관리해준다.</code>)관리시스템이며, GitHub는 Git으로 생산된 산출물이 저장되는 <code class="highlighter-rouge">Git저장소</code>라고 할 수 있겠다. 실용적인 관점에서 접근하자면 지역저장소를 관리하기 위한 도구가 Git이며, 원격저장소의 집합체가 GitHub이다.</p>
+
+<p>위 문제들 때문에 골치가 아프셨다면, 그리고 반드시 해결하고 싶다면 Git&amp;GitHub는 필수다!</p>
+
+<h2 id="git과-친해지기-어려운-이유">Git과 친해지기 어려운 이유</h2>
+<hr />
+<p>위에서 설명한 지옥을 피하기 위해 반드시 Git&amp;GitHub을 사용하겠다는 다짐은 누구나 할 수 있지만, Git&amp;GitHub과 그 친분을 이어나가는 것은 아무나 할 수 없다.</p>
+
+<p>그 이유로 필자가 경험했던 내용을 위주로 아래와 같이 요약해보았다.</p>
+
+<ul>
+  <li><strong>Git Bash vs Git GUI</strong>
+    <ul>
+      <li>Git을 사용하는 방법은 크게 2가지가 있다. <code class="highlighter-rouge">Bash는 커맨드라인 모드로 텍스트 기반의 명령어를 한줄식 타이핑하면서 Git을 사용하는 방법</code>이고, GUI는 화면을 마우스로 제어하여 Git을 사용하는 방법이다.</li>
+      <li>처음에는 물론 GUI가 편하다. 다만 갈수록 복잡해지는 기능을 숙달하기에는 직관적이지 않고 사용하기 어려워진다. 태생이 리눅스 버전을 관리하기 위한 용도로 개발되었기 때문에 Bash 모드에 적응하는 것이 Git에 친숙해질 수 있는 길이다. 다만 그렇게 커맨드 라인으로 타이핑하는 부분 때문에 초반에 낯설고 어려운 진입장벽이 되기도 한다.</li>
+    </ul>
+  </li>
+  <li><strong>리눅스에 대한 사전지식의 필요성</strong>
+    <ul>
+      <li>앞서 설명한 바와 같이 Git Bash는 커맨드라인 텍스트 기반의 <code class="highlighter-rouge">리눅스 명령어 방식으로 동작</code>한다. 때문에 기본적인 리눅스 명령어에 숙달되지 않으면 버전관리가 어려워지며 다양하고 편리한 기능을 활용할 수 없다.</li>
+    </ul>
+  </li>
+  <li><strong>Add - Commit - Push 매커니즘</strong>
+    <ul>
+      <li>그동안의 문서 편집기는 저장버튼만 클릭할 수 있으면 되었다. 간혹 되돌리고 싶은 경우 Ctrl+z 단축키를 이용하곤 했지만 겨우 커맨드는 2종류에 지나지 않았다. 그런데 저장만 하면 됐지 <code class="highlighter-rouge">Add - Commit - Push</code> 3종 세트는 귀찮고 어렵게 왜 계속 해야하는지 도통 이해가 안된다.</li>
+    </ul>
+  </li>
+  <li><strong>브랜치는 또 뭐냐? 나뭇가지냐?</strong>
+    <ul>
+      <li>갑자기 난데없이 나뭇가지가 나온다. 뭔가 들여다보니 수정내용을 <code class="highlighter-rouge">커밋한 일련의 모음</code>을 의미하는데 이게 나뭇가지처럼 갈라지기도 하고, 심지어는 합쳐지기도 한다.</li>
+      <li>대략 여기서부터 멘붕이온다..</li>
+    </ul>
+  </li>
+  <li><strong>깃허브와 원격저장소</strong>
+    <ul>
+      <li>지역저장소 하나도 간신히 뗐는데, 이젠 <code class="highlighter-rouge">지역저장소를 원격저장소와 연결</code>하란다.</li>
+      <li>그것도 모자라서 원격저장소에 Push할 때마다 무슨 인증을 계속 하라는데 싫으면 <code class="highlighter-rouge">SSH</code>를 쓰란다.</li>
+      <li>리눅스도 몰라서 해메이는데 SSH는 또 뭐냐.. 이젠 보안도 알아야 하나?</li>
+    </ul>
+  </li>
+  <li><strong><code class="highlighter-rouge">회사 PC</code>와 <code class="highlighter-rouge">집 노트북</code>에서도 동일하게 작업할 수 있다던데..</strong>
+    <ul>
+      <li>그러려고 Git을 쓴건데 생각보다 어렵다. 매일 같은 컴퓨터에서 Commit이나 할 줄 알았지.. Git Pull도 다른 PC에선 필수라는 것을이 파악하는데 제법 오랜시간이 걸린다.</li>
+      <li>거기까진 좋은데 하다보면 파일이 서로 꼬여 Conflict라는 놈이 발생하는데.. 이거 해결이 골때리게 어렵다.</li>
+    </ul>
+  </li>
+  <li><strong>다 알고나니 이젠 남들과 동기화하란다. OTL</strong>
+    <ul>
+      <li>날이 갈수록 복잡해진다. 팀원들 각자 별도의 브랜치를 만들기도 하고 승인이 끝나면 <code class="highlighter-rouge">팀장의 master 브랜치에 병합</code>도 한다. 기껏 병합했는데 일정 시점이 지나서 또 분기를 한다. 그렇게 분기와 병합을 밥먹듯이 한다. 근데 그 과정에서의 <code class="highlighter-rouge">충돌</code> 그리고 심지어 <code class="highlighter-rouge">되돌리기</code>도 한다.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>괴로워 보이는 일련의 과정이지만 돌이켜보면 생각보다 어렵지 않은 작업이었다. 그만큼 Git이 상당히 직관적으로 개발되었기 때문이다. 문제는 얼마나 쉽고 빠르게 익히느냐 정도인데 현재 필자가 아는 <code class="highlighter-rouge">최고 좋은 솔루션은 단연 현재 소개하고 있는 본 도서</code>이다.</p>
+
+<h2 id="이-책을-한마디로-표현하면-뚫어뻥">이 책을 한마디로 표현하면 뚫어뻥</h2>
+<hr />
+<p>앞의 챕터에서 설명했던 Git과 친해지기 어려웠던 일련의 시나리오들은 이 책에서 매우 쉽고 간단한 예제를 통해 속시원하게 뚫어준다. 이미 Git의 대부분을 알아버린 이 시점에 이렇게 쉽고 재미있는 책을 늦게 만난것이 야속하지만, 그래도 그간의 Git 사용법을 돌이키고 간혹 몰랐던 Tip을 익힐 수도 있었다.</p>
+
+<p>단연컨데 이 책은 Git을 가장 빨리 익힐 수 있는 방법이다. 이 책의 백미는 초보자들이 겪는 <code class="highlighter-rouge">시행착오와 어려움을 일종의 타임라인 순으로 책을 구성</code>하였다는 점이다. 특정 챕터를 익히고 Git을 사용하다보면 궁금점이나 한계에 봉착하는데 대부분의 문제점은 바로 다음장을 펴면 해답이 있을 정도로 놀랍게도 그 흐름이 일치한다. 아래 그림부터 배움의 순서를 중요시 하는 저자의 조언이 등장한다.
+<img src="https://theorydb.github.io/assets/img/review/2019-12-26-review-book-git-github-2.jpg" alt="순서대로" /></p>
+
+<p>Git 명령어별로 <code class="highlighter-rouge">복잡한 상태에 대한 개념을 명확하게 해주는</code> 점도 이 책의 장점이라고 할 수 있다. 아래 그림은 git status 명령어의 수행 결과에 따라 파일 상태가 어떤 단계에 속하는지 전체 개념을 정리해주는 도식도이다.
+<img src="https://theorydb.github.io/assets/img/review/2019-12-26-review-book-git-github-3.jpg" alt="개념도식화" /></p>
+
+<p>집요할 정도로 쉽고 상세한 설명은 마치 독자에게 <code class="highlighter-rouge">아무리 무식해도 절대 이 책을 덮지 못하게 만들어 주마.</code>라고 호언장담하는 느낌이다. 그렇게 설명했는데도 어려워할까 두려웠던지 그림의 우측 상단 도움말이 어려운 내용을 반복하여 설명해준다.
+<img src="https://theorydb.github.io/assets/img/review/2019-12-26-review-book-git-github-4.jpg" alt="도움말" /></p>
+
+<p>여기서 끝이 아니고 확인사살이 또 있다. 각 장을 마치고 나면 손글씨를 쓰게 한다. 마치 아마존의 CEO 베조스가 보고 혹은 회의 석상에서 전자문서가 아닌 손으로 쓴 글씨를 요구하는 느낌이라고나 할까? 실제로 <code class="highlighter-rouge">손글씨가 오랜 기억력을 향상</code>시킨다는 연구결과가 있다. 그래서인지 그림과 같은 통과의례를 마치고 나면 며칠 뒤에도 기억이 생생하다.
+<img src="https://theorydb.github.io/assets/img/review/2019-12-26-review-book-git-github-5.jpg" alt="확인사살" /></p>
+
+<p>위 챕터에서 언급했던 Git과 친해지기 어려운 이유 중 하나인 충돌난 문서를 해결하는 부분이다. 대부분의 책 또는 블로그에서 대충 말로만 표현해서 어떻게 해결해야 하는지 막막했었던 경험이 있다. 그런데 이 책은 다르다! <code class="highlighter-rouge">필요한 부분만 정확하게 붉은색 박스로 하이라이트 했고, 유치원생에게 설명한다는 느낌</code>을 받을 정도로 최대한 구체적으로 설명한다.
+<img src="https://theorydb.github.io/assets/img/review/2019-12-26-review-book-git-github-6.jpg" alt="Merge" /></p>
+
+<p>마찬가지로 회사 컴퓨터에서 내려받아 작업하는 부분이다. git pull이라는 <code class="highlighter-rouge">명령어의 핵심 개념을 짚고, 실제 적용한 화면을 통해 실습과 비교할 수 있게 해주고, 확인사살로 도식화</code>를 통해 개념을 정립하게 해준다.
+<img src="https://theorydb.github.io/assets/img/review/2019-12-26-review-book-git-github-7.jpg" alt="회사컴퓨터와 협업" /></p>
+
+<p>혼히 풀리, 풀리퀘라고 말하는 pull request에 대한 설명이다. 오픈 소스에서 컨트리뷰터로 활동하기 위한 필수 과정이다. 사실 개인적으로 풀리퀘를 할 수 있다면 Git 관한 한 중수 ~ 고수는 되지 않을까 생각이 든다. 이 명령어는 책의 후반부에 설명이 되어있는데 역시 독자 <code class="highlighter-rouge">시행착오의 타임라인을 철저히 고수하여 밀착관계</code>를 유지한다.
+<img src="https://theorydb.github.io/assets/img/review/2019-12-26-review-book-git-github-8.jpg" alt="풀리퀘" /></p>
+
+<p>마지막으로 필자가 지금 운영중인 <a href="https://theorydb.github.io/">블로그-theorydb</a>와 같은 Github Pages를 활용한 개인 블로그 만들기, Visual Studio Code와 Git의 연동 등 일상생활에 유익한 Tip을 소개하며 책이 마무리된다.
+<img src="https://theorydb.github.io/assets/img/review/2019-12-26-review-book-git-github-8.jpg" alt="Github Pages" />
+<img src="https://theorydb.github.io/assets/img/review/2019-12-26-review-book-git-github-8.jpg" alt="Visual Studio Code" /></p>
+
+<p>쓸데없는 군더더기 모두 제거하고 핵심만을 밀착 지도하는 최고의 Git 입문서로, Git을 정복하기에 많은 난관에 부딪혀 포기한 분이 계시다면 이번 기회에 100% 승리하시길 권한다.</p>
+
+<ul>
+  <li><a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&amp;mallGb=KOR&amp;barcode=9791163031222&amp;orderClick=LEa&amp;Kc=">책소개 Link</a></li>
+  <li><a href="https://cafe.naver.com/doitstudyroom">Do it!공부단 상시모집 중</a></li>
+</ul>
+
+<h2 id="누가-읽어야-하는가">누가 읽어야 하는가?</h2>
+<hr />
+<ul>
+  <li>
+    <p>Git&amp;GitHub을 사용하고자 하는 모든 분.</p>
+  </li>
+  <li>
+    <p>Git을 정복하기에 많은 난관에 부딪혀 포기한 분.</p>
+  </li>
+  <li>
+    <p>사내 깃헙을 도입하여 새롭게 Git을 익혀야 하는 IT 개발자 등.</p>
+  </li>
+</ul>
+
+<h2 id="책의-구성-및-요약">책의 구성 및 요약</h2>
+<hr />
+<p>이 책은 크게 세부분으로 구성되며, 각 파트에서 다루는 내용을 아래와 같이 요약해 보았다.</p>
+
+<ul>
+  <li><strong>1. 깃에서 브랜치까지 (1 ~ 3장)</strong>
+    <ul>
+      <li>깃 &amp; 설치 &amp; 리눅스 익히기</li>
+      <li>저장소 생성, 버전 만들기, 커밋, 파일상태 확인, 되돌리기</li>
+      <li>브랜치, 정보확인, 병합, 관리</li>
+    </ul>
+  </li>
+  <li><strong>2. 깃허브(4 ~ 5장)</strong>
+    <ul>
+      <li>원격저장소, 깃허브, 지역저장소와의 연결, 원격저장소 pull&amp;push, SSH</li>
+      <li>여러컴퓨터에서의 동기화</li>
+      <li>협업에서 브랜치 활용</li>
+    </ul>
+  </li>
+  <li><strong>3. 기타 Tip(6장, 꿀팁)</strong>
+    <ul>
+      <li>프로필관리, Readme, 오픈소스 프로젝트 참여하기</li>
+      <li>Github Pages를 활용한 개인 블로그 구축</li>
+      <li>Visual Studio Code와 Git 연동 등</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="요약하며">요약하며…</h2>
+<hr />
+<p>위에서 언급한 바와 같이 이 책을 한마디로 표현하자면 <code class="highlighter-rouge">Git&amp;GitHub를 익히기 위한 최고의 솔루션</code>이다. 본 도서의 구성이 <code class="highlighter-rouge">독자 시행착오의 타임라인 순서를 철저히 고수하며 독자와의 밀착관계를 형성</code>하기 때문이다. 마치 선생님이 옆에 있는 것처럼 궁금한 질문에 대한 답이 바로바로 나와주니 흥미와 몰입도가 저절로 향상된다.</p>
+
+<p>이런 구성이 신기하여 알아보니 저자분이 가독성 좋고 전달력이 뛰어난 책을 집필하시기로 유명한 분이시더라. Git을 익히기에 군더더기는 모두 제거하고 핵심만을 확인 사살하며 뼈 속 깊이 익힐 수 있게 만든 몇가지의 장치가 있다. 굳이 이런 구성까지 눈치채지 못하더라도 은 엄청 빨리 읽혀지는데 내용은 쉬이 잊혀지지 않는 의아한 경험을 하게 될 것이다.</p>
+
+<p>책의 단점은 딱히 찾을 길 없고 입문서를 넘어선 중고급자를 위한 심화 후속편이 나왔으면 하는 바램이다. Git&amp;GitHub이 어려워 손들고 포기한 분이 계시다면, 속는셈 치고 본 도서로 다시 도전하시길 권유드린다. 100% 성공을 보장한다.</p>
+
+<blockquote>
+  <p>&lt;이지스퍼블리싱 출판사&gt;</p>
+
+  <p>출판사 이름에서도 알 수 있듯이 초보자도 읽기쉬운(Easy) 서적을 출판하는 회사입니다. IT개발자라면 누구나 한번쯤은 접했을 <code class="highlighter-rouge">Do it!</code> 시리즈는 따라하기만 해도 걸작을 만들 수 있기로 정평이 나 있습니다. 온갖 서적을 접해도 해결하지 못했다면 마지막으로 이지스퍼블리싱 도서를 읽어보세요. 그동안 이해하지 못했던 기술과 개념 조각의 퍼즐이 완성되는 것을 느끼실 수 있습니다. Do it! 스터디 룸 카페에 가입하여 공부단으로 활동하시면 책 1권을 선물로 받을 수 있습니다. 커피 몇잔의 가격으로 책 한권이 주는 다양한 실속 가치! 이지스퍼블리싱의 매력입니다.</p>
+</blockquote>
+
+<p><a href="http://www.easyspub.co.kr/">이지스퍼블리싱 바로가기</a></p>
+
+      <br/>
+      <br/>
+      <!-- 블로그-하단-반응형 -->
+      <ins class="adsbygoogle"
+          style="display:block; width:100%; height:300px;"
+          data-ad-client="ca-pub-9134477021095729"
+          data-ad-slot="2380354290"
+          data-ad-format="auto"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+    <script>
+
+    </script>
+  
+
+</article>
+
+  <hr class="dingbat" />
+
+  <div class="share">
+      <h2>Share this post</h2>
+      <div class="share-body">
+        <a href="http://twitter.com/share?text=[리뷰] Do it! 지옥에서 온 문서관리자 깃&깃허브 입문&amp;url=http://localhost:4000/review/2019/12/26/review-book-git-github/"
+    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+            <span class="icon-twitter">
+            </span>
+        </a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/review/2019/12/26/review-book-git-github/"
+    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+            <span class="icon-facebook">
+            </span>
+        </a>
+    </div>
+  </div>
+  <br/>
+
+
+
+
+
+
+  <aside class="author" role="complementary">
+    <div class="author">
+  <h2 class="page-title hr">
+    About
+  </h2>
+<div class="author-body">
+  
+    
+  
+
+  
+
+  <img
+    src="/assets/img/me.jpg"
+    class="me"
+    alt="min"
+    srcset="/assets/img/me.jpg 1x,/assets/img/me.jpg 2x"
+    
+  />
+
+
+  
+  <div class="author-body-description">
+    <p>훌륭한 Data scientist가 되고 싶은 개발자.</p>
+
+  </div>
+</div>
+</div>
+
+  </aside>
+
+
+
+
+
+<aside class="related" role="complementary">
+  <h2 class="hr">Related Posts</h2>
+
+  <ul class="related-posts">
+    
+      
+      
+      
+        
+        
+          
+
+
+<li class="h4">
+  <a href="/review/2020/01/22/review-book-tableau/" data-flip="title">
+    <span>[리뷰] 태블로 굿모닝 굿애프터눈</span>
+  </a>
+  <small><time datetime="2020-01-22T00:00:00+09:00">
+    22 Jan 2020
+  </time></small>
+</li>
+
+        
+      
+        
+        
+          
+
+
+<li class="h4">
+  <a href="/review/2020/01/17/review-book-alphazero/" data-flip="title">
+    <span>[리뷰] 알파제로를 분석하며 배우는 인공지능</span>
+  </a>
+  <small><time datetime="2020-01-17T00:00:00+09:00">
+    17 Jan 2020
+  </time></small>
+</li>
+
+        
+      
+        
+        
+          
+
+
+<li class="h4">
+  <a href="/review/2019/12/27/review-book-us-stock/" data-flip="title">
+    <span>[리뷰] 미국 주식 스타터팩</span>
+  </a>
+  <small><time datetime="2019-12-27T00:00:00+09:00">
+    27 Dec 2019
+  </time></small>
+</li>
+
+        
+      
+        
+          
+          
+    
+  </ul>
+</aside>
+
+
+
+      
+        <aside class="comments" role="complementary">
+  <h2>Comments</h2>
+  <hr/>
+
+  <div id="disqus_thread"></div>
+
+  <script>
+    !function(s,i){function e(e){var t=s.pageYOffset||i.body.scrollTop;s.DISQUS&&!s._disqusThis&&!s._disqusFirst&&t+s.innerHeight>=s._disqusThreadOffsetTop&&(s._disqusThis=!0,s.DISQUS.reset({reload:!0,config:d}))}var d=function(){this.page.title="[리뷰] Do it! 지옥에서 온 문서관리자 깃&깃허브 입문",this.page.identifier="/review/2019/12/26/review-book-git-github",this.page.url="http://localhost:4000/review/2019/12/26/review-book-git-github/"};s._disqusFirst=void 0===s._disqusFirst||s._disqusFirst,s._disqusLoading=void 0!==s._disqusLoading&&s._disqusLoading,s._disqusThis=!1,s._disqusThreadOffsetTop=i.getElementById("disqus_thread").offsetTop,s._disqusLoading?s._disqusFirst=!1:(s._disqusLoading=!0,loadJSDeferred("//theorydb.disqus.com/embed.js"),s.addEventListener?s.addEventListener("scroll",e,{passive:!0}):s.attachEvent?s.attachEvent("onscroll",e):s.onscroll=e)}(window,document);
+
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</aside>
+
+      
+
+      <footer>
+  <hr/>
+  
+    <p>© 2019.04. by theorydb</p>
+
+  
+  <p>
+    <code>Powered by <a href="https://theorydb.github.io/">theorydb</a></code>
+  </p>
+</footer>
+
+    </main>
+    <div class="right-side">
+  <div class="ad-first">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- 블로그-상단-모바일 -->
+    <ins class="adsbygoogle"
+         style="display:inline-block;width:100%;"
+         data-ad-client="ca-pub-9134477021095729"
+         data-ad-slot="6559875097"
+         data-ad-format="auto"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+<br/>
+<br/>
+  <div class="ad-second">
+    <!-- 블로그-스카이스크래퍼 -->
+    <ins class="adsbygoogle"
+         style="display:inline-block;max-width:320px;width:100%;height:600px"
+         data-ad-client="ca-pub-9134477021095729"
+         data-ad-slot="6826803092"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+</div>
+
+  </div>
+  <div id="_yDrawer">
+  <div id="_sidebar" class="sidebar">
+    <div class="sidebar-bg" style="background-color:#4f86aa;background-image:url(/assets/img/main_left.jpg)"></div>
+    <header class="sidebar-sticky" role="banner">
+      <br/>
+      <div class="sidebar-about">
+        <h1><a id="_title" href="/">TheoryDB</a></h1>
+        <p>All roads lead to data.</p>
+
+      </div>
+
+      <br/>
+      <br/>
+      <nav class="sidebar-nav heading" role="navigation">
+        <span class="sr-only">Navigation:</span>
+<ul>
+  
+
+  
+
+  
+  
+  
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-1"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/think/">Think</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/think-think/">Think</a>
+             </li>
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-2"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/envops/">EnvOps</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-3"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/dev/">Dev</a>
+       <label class="folder" for="list-item-3">▾</label>
+    </div>
+     <ul class="list-body">
+       
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/dev-statisticsr/">Statistics & R</a>
+             </li>
+           
+         
+           
+         
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/dev-ml/">ML</a>
+             </li>
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/dev-dl/">DL</a>
+             </li>
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/dev-papertomath/">PaperToMath</a>
+             </li>
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/dev-competition/">Competition</a>
+             </li>
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/dev-rdbms/">Rdbms</a>
+             </li>
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-4"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/startup/">Startup</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/startup-startup/">Startup</a>
+             </li>
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-5"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/unclassified/">Unclassified</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/unclassified-unclassified/">Unclassified</a>
+             </li>
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-6"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/review/">Review</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+         
+           
+         
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/review-review/">Review</a>
+             </li>
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-7"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/favorites/">Favorites</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/favorites-favorites/">Favorites</a>
+             </li>
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-8"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/about/">About</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+</ul>
+
+      </nav>
+    <br/>
+
+    <form action="/search">
+      <div class="tipue_search_left">
+        <img src="/assets/tipuesearch/search.png" class="tipue_search_icon">
+      </div>
+      <div class="tipue_search_right">
+        <input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required></div>
+      <div style="clear: both;"></div>
+    </form>
+
+    <br/>
+      <div class="sidebar-box">
+        
+          
+  
+
+  
+
+  <img
+    src="/assets/img/me.jpg"
+    class="me"
+    alt="min"
+    srcset="/assets/img/me.jpg 1x,/assets/img/me.jpg 2x"
+    
+  />
+
+
+        
+      </div>
+      <p>Data Scientist의 길..</p>
+
+      
+      
+        <div class="sidebar-social">
+          <span class="sr-only">Social:</span>
+<ul>
+  
+    
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="https://facebook.com/cantouchmin">
+    <span class="icon-facebook" title="Facebook"></span>
+    <span class="sr-only">Facebook</span>
+  </a>
+</li>
+
+  
+    
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="https://github.com/theorydb">
+    <span class="icon-github" title="GitHub"></span>
+    <span class="sr-only">GitHub</span>
+  </a>
+</li>
+
+  
+    
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="mailto:theorydb@gmail.com">
+    <span class="icon-mail" title="Email"></span>
+    <span class="sr-only">Email</span>
+  </a>
+</li>
+
+  
+    
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="https://theorydb.github.io/feed.xml">
+    <span class="icon-rss2" title="RSS"></span>
+    <span class="sr-only">RSS</span>
+  </a>
+</li>
+
+  
+</ul>
+
+        </div>
+      
+    </header>
+  </div>
+</div>
+
+</div>
+
+<!-- =============== -->
+<!-- SCRIPTS         -->
+<!-- =============== -->
+
+<script>
+  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+  ga('create', 'UA-137374202-1', 'auto');
+  ga('send', 'pageview');
+  loadJSDeferred('https://www.google-analytics.com/analytics.js');
+</script>
+
+
+
+
+
+<!--[if gt IE 8]><!---->
+<script src="//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  WebFont.load({
+    
+    google: {
+      families: 'Merriweather-Light'.split('|')
+    },
+    
+
+    custom: {
+      families: ['icomoon'],
+      urls: ['/assets/icomoon/style.css']
+    }
+  });
+</script>
+<!--<![endif]-->
+
+
+  <!--[if gt IE 9]><!---->
+  
+  <script>loadJSDeferred('/assets/js/hydejack.js?v=6.4.0');</script>
+
+  
+  <!--<![endif]-->
+
+
+
+</body>
+
+</html>
