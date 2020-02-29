@@ -1,8 +1,8 @@
 # The primary author of this blog.
 # Must be the same as `author` in `_config.yml`.
 # Change `qwtel` to your shortname (used in the front matter to set a page's author, e.g. `author: qwtel`).
-theorydb:
-  name:              jungin
+ingreatday:
+  name:              jungs
   email:             jungs01812@gmail.com
 
   # Used at the bottom of each page and at the top of the `about` layout
@@ -21,7 +21,7 @@ theorydb:
   # Comment/uncommet to show/hide
   # Icons appear in order, can be rearranged:
   social:
-    facebook:        cantouchmin
+    # facebook:        <username>
     # twitter:         <username>
     # google:          <number>
     # vk:              <username>
@@ -45,7 +45,7 @@ theorydb:
     # pinterest:       <username>
     # foursquare:      <number>
     # yelp:            <string>
-    github:          jungin07
+    github:          ingreatday
     # stackoverflow:   <number/username>
     # npm:             <username>
     # hackernews:      <username>
@@ -56,8 +56,8 @@ theorydb:
     # delicious:       <username>
     # stumbleupon:     <username>
     # paypal:          <username>
-    email:           mailto:jungs01812@gmail.com
-    rss:             https://jungin07.github.io/feed.xml
+    # email:           mailto:jungs01812@gmail.com
+    rss:             https://ingreatday.github.io/feed.xml
 
 # Another author
 mdo:
