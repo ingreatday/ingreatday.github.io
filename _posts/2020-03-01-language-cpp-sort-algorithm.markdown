@@ -1,11 +1,12 @@
 ---
 layout: post
-title: "[c++] sort algorithm"
-subtitle: "About sort algorithm(STL)"  
+title: _posts/2020-01-22-language-sort-algorithm.markdown
+subtitle: About sort algorithm(STL)
 categories: language
 tags: sort algorithm stl
 comments: true
 <!--header-img: img/review/2020-01-22-review-book-tableau-1.jpg  -->
+published: true
 ---
 
 sort 함수는 알고리즘 헤더파일에서 제공하고, 주어진 범위내에서 원소들을 정렬한다. 이 함수는 기본적으로 오름차순 정렬을 수행한다.
