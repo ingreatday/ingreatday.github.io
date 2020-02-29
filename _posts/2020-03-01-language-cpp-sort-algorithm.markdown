@@ -3,7 +3,7 @@ layout: post
 title: _posts/2020-01-22-language-sort-algorithm.markdown
 subtitle: About sort algorithm(STL)
 categories: language
-tags: sort algorithm stl
+tags: cpp sort algorithm stl
 comments: true
 <!--header-img: img/review/2020-01-22-review-book-tableau-1.jpg  -->
 published: true
