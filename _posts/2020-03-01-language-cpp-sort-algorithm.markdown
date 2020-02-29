@@ -1,6 +1,6 @@
 ---
 layout: post
-title: _posts/2020-01-22-language-sort-algorithm.markdown
+title: _posts/2019-01-22-language-sort-algorithm.markdown
 subtitle: About sort algorithm(STL)
 categories: language
 tags: cpp sort algorithm stl
