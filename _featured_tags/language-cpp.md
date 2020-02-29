@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: Statistics & R
-slug: r
-category: dev
+title: cpp
+slug: cpp
+category: language
 menu: false
 order: 1
 ---
