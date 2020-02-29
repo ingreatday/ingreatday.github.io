@@ -1,6 +1,6 @@
 ---
 layout: post
-title: _posts/2019-01-22-language-sort-algorithm.markdown
+title: '[c++] sort algorithm'
 subtitle: About sort algorithm(STL)
 categories: language
 tags: cpp sort algorithm stl
