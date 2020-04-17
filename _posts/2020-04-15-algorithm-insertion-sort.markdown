@@ -1,5 +1,11 @@
 ---
-published: false
+layout: post
+title: 'insertion sort'
+subtitle: 'insertion sort, 삽입 정렬'
+categories: algorithm
+tags: algorithm sort insertion_sort 
+comments: true
+published: true
 ---
 비교기반(comparison-based) 정렬 알고리즘에는 __선택 정렬(selection sort), 버블 정렬(bubble sort), 삽입 정렬(insertion sort), 쉘 정렬(shell sort), 퀵 정렬(quick sort), 합병 정렬(merge sort), 히프 정렬(heap sort)__ 이 있다.
 
